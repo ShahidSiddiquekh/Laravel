@@ -1,20 +1,28 @@
+
+
+
 <?php
 
-use Illuminate\Support\Facades\Route;
+// use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\UserController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
+// /*
+// |--------------------------------------------------------------------------
+// | Web Routes
+// |--------------------------------------------------------------------------
+// |
+// | Here is where you can register web routes for your application. These
+// | routes are loaded by the RouteServiceProvider within a group which
+// | contains the "web" middleware group. Now create something great!
+// |
+// */
+
+Route::get('/main', [RegistrationController::class, 'index']);
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/main');
 });
 
 Route::get('/dashboard', function () {
@@ -22,3 +30,19 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+ 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
+
+Route::get('/form', [RegistrationController::class, 'index'])->name('register123');
+
+
+
+
+
+
+
+
