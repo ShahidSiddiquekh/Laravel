@@ -15,29 +15,30 @@
             <div class="carousel-item active">
                 <img class="d-block w-10" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeZpsNVML3atLrOgTEwsKjFcBrb1FotGz6Yg&s" alt="Los Angeles">
                 <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>LA is always so much fun!</p>
-                </div>
+    <h3 style="color: green;">Motorola</h3>
+    <p style="color: green;">LA is always so much fun!</p>
+</div>
+
             </div>
             <div class="carousel-item">
                 <img class="d-block w-10" src="https://images.priceoye.pk/motorola-moto-g23-pakistan-priceoye-kblka.jpg" alt="Los Angeles">
                 <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>LA is always so much fun!</p>
+                    <h3 style="color: green;">Nokia</h3>
+                    <p style="color: green;">LA is always so much fun!</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-10" src="https://eezepc.com/wp-content/uploads/2024/01/steel-blue-1.webp" alt="Los Angeles">
                 <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>LA is always so much fun!</p>
+                    <h3 style="color: green;">iPhone</h3>
+                    <p style="color: green;">LA is always so much fun!</p>
                 </div>
             </div>
         </div>
 
         <!-- Left and right controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
