@@ -5,6 +5,11 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
+
+Route::get('test', function (){
+    return view ('job-posted');
+});
+
 Route::get('/main', [RegistrationController::class, 'index'])->name('main');
 
 Route::redirect('/', '/main');
